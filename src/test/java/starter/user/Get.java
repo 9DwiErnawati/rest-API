@@ -28,6 +28,7 @@ public class Get {
     public void iReceiveValidDataForDetailUser() {
         restAssuredThat(response -> response.body("'data'.'id'", equalTo(2) ));
         restAssuredThat(response -> response.body("'data'.'first_name'", equalTo("Janet") ));
-
+        restAssuredThat(response -> response.body("'data'.'last_name'", equalTo("Weaver") ));
+        restAssuredThat(response -> response.body("'data'.'avatar'", equalTo("https://reqres.in/img/faces/2-image.jpg") ));
     }
 }
