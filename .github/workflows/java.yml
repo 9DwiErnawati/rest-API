@@ -1,4 +1,4 @@
-name: API Automation Java + Maven
+name: API Automation
 
 on:
   push:
