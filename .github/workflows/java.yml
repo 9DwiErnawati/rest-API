@@ -23,6 +23,7 @@ jobs:
   test:
     name: Test API
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: api testing
         run: mvn clean verify
