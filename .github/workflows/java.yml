@@ -21,8 +21,8 @@ jobs:
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify
   test:
-    name: TEST API
+    name: Test Automation API
     runs-on: ubuntu-latest
     steps:
-      - name: Test API
+      - name: api testing
         run: mvn clean verify
